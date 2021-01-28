@@ -15,6 +15,7 @@
 		3FC8894125C15BB900FA7321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FC8893F25C15BB900FA7321 /* LaunchScreen.storyboard */; };
 		3FC8894C25C15BB900FA7321 /* SimpleWebViewCommTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8894B25C15BB900FA7321 /* SimpleWebViewCommTests.swift */; };
 		3FC8895725C15BBA00FA7321 /* SimpleWebViewCommUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8895625C15BBA00FA7321 /* SimpleWebViewCommUITests.swift */; };
+		3FC8896825C165D500FA7321 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 3FC8896725C165D500FA7321 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3FC8895225C15BB900FA7321 /* SimpleWebViewCommUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleWebViewCommUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC8895625C15BBA00FA7321 /* SimpleWebViewCommUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWebViewCommUITests.swift; sourceTree = "<group>"; };
 		3FC8895825C15BBA00FA7321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC8896725C165D500FA7321 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3FC8893425C15BB800FA7321 /* AppDelegate.swift */,
 				3FC8893625C15BB800FA7321 /* SceneDelegate.swift */,
 				3FC8893825C15BB800FA7321 /* ViewController.swift */,
+				3FC8896725C165D500FA7321 /* index.html */,
 				3FC8893A25C15BB800FA7321 /* Main.storyboard */,
 				3FC8893D25C15BB900FA7321 /* Assets.xcassets */,
 				3FC8893F25C15BB900FA7321 /* LaunchScreen.storyboard */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FC8894125C15BB900FA7321 /* LaunchScreen.storyboard in Resources */,
+				3FC8896825C165D500FA7321 /* index.html in Resources */,
 				3FC8893E25C15BB900FA7321 /* Assets.xcassets in Resources */,
 				3FC8893C25C15BB800FA7321 /* Main.storyboard in Resources */,
 			);
