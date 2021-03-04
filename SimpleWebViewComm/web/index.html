@@ -1,0 +1,66 @@
+<head>
+    <style>
+   
+        .content {
+            box-sizing: border-box;
+            width:100%;
+            height: 100%;
+            display:flex;
+            flex-direction: column;
+        }
+    
+        .button {
+            width: 100%;
+            background: purple;
+            border: none;
+            color: white;
+            height: 44px;
+        }
+        #molly {
+            height: 256px;
+            width: 340px;
+        }
+        #currentTrickText {
+            font-family: sans-serif;
+            color: purple;
+            text-align: center;
+            width: 100%;
+            font-size: 16;
+            font-weight: 600px;
+            height: 40px;
+        }
+    </style>
+    <script>
+        var currentTrick = "Sit"
+        
+        function performTrick(trick) {
+            let molly = document.getElementById("molly");
+            molly.src = "images/" + trick + ".png";
+            
+            let label = document.getElementById("currentTrickText");
+            label.textContent = trick;
+            currentTrick = trick
+        }
+    
+        function getNewTrick() {
+            //1. this is where we call the native code
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.selectTrick) {
+                window.webkit.messageHandlers.selectTrick.postMessage({
+                    "currentTrick": currentTrick
+                });
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+    <div class="content">
+        <img id="molly" src="images/Sit.png"/>
+        <p id="currentTrickText">Sit</p>
+        <button class="button"
+            onClick="getNewTrick()">
+            Do Trick!
+        </button>
+    </div>
+</body>
